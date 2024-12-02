@@ -7,8 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="about.html">私について</a></li>
+        </ul>
+    </nav>
     <h1>ようこそ、私のサイトへ！</h1>
     <p>これはGitHub Pagesを使ってホスティングされたサイトです。</p>
-    <a href="about.html">私について</a>
+    <section>
+        <h2>プロフィール</h2>
+        <p>私は猫が大好きなウェブデザイナーです。</p>
+    </section>
+    <section>
+        <h2>ギャラリー</h2>
+        <img src="your-image.jpg" alt="かわいい猫">
+    </section>
+    <section>
+        <h2>お問い合わせ</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">メール:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">送信</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
